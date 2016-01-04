@@ -12,13 +12,15 @@ $.ajax("data.json").then(function(response){
         var gender = response[i].gender;
         var first_name = response[i].first_name;
         var last_name = response[i].last_name;
+
         if (response[i].email) {
+            var gender = gender + ',';
             var email = response[i].email;
         } else {
             var email = '';
         };
 
-        $content = '<ul><li class="id">' + id + '</li><li class="first_name">' + first_name + '</li><li class="last_name">' + last_name + ', </li><li class="gender">' + gender + ', </li><li class="email">' + email + '</li></ul>';
+        $content = '<ul><li class="id">' + id + '</li><li class="first_name">' + first_name + '</li><li class="last_name">' + last_name + ', </li><li class="gender">' + gender + '</li><li class="email">' + email + '</li></ul>';
 
         $(".content").append($content);
 
