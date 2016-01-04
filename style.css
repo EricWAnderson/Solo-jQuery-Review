@@ -10,3 +10,7 @@ ul:nth-child(odd){
 .id {
     font-weight: bold;
 }
+
+.email {
+    text-decoration: underline;
+}
