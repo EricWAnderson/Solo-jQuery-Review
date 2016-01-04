@@ -1,0 +1,12 @@
+li {
+    display: inline;
+    margin: 5px;
+}
+
+ul:nth-child(odd){
+    background-color: #ddd;
+}
+
+.id {
+    font-weight: bold;
+}
